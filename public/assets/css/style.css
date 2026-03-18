@@ -1,0 +1,617 @@
+/* Pastikan namanya .btn-add (bukan .button-add) */
+* {
+    font-family: poppins;
+}
+
+/* Custom Spinner Warna Cyan */
+.swal2-loader {
+    border-color: #60F6EB transparent #60F6EB transparent !important;
+}
+
+.swal-custom-popup {
+    border-radius: 30px !important;
+    padding: 2rem !important;
+}
+
+.btn-add {
+    background-color: #E5AF33 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-add:hover {
+    /* Hanya berubah warna sedikit lebih gelap */
+    background-color: #c99a2b !important;
+    transform: translateY(-2px);
+}
+
+.btn-add:active {
+    /* Efek klik sederhana */
+    transform: translateY(0);
+}
+
+
+.btn-add:hover {
+    filter: brightness(1.1);
+}
+
+.btn-request {
+    background-color: #F76361 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-request:hover {
+    background-color: #e05250 !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.btn-request:active {
+    /* Efek saat ditekan */
+    transform: translateY(0);
+}
+
+.btn-search {
+    background-color: #B2ABFB !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-search:hover {
+    background-color: #968df3 !important;
+    /* Warna ungu yang sedikit lebih gelap */
+    color: white !important;
+    transform: translateY(-2px);
+    /* Efek tombol terangkat sedikit */
+    box-shadow: 0 4px 15px rgba(178, 171, 251, 0.4);
+    /* Glow tipis warna ungu */
+}
+
+.btn-search:active {
+    transform: translateY(0);
+    /* Efek membal saat diklik */
+    background-color: #8379e9 !important;
+}
+
+.btn-approval {
+    background-color: #F5E76C !important;
+    color: #2c2c2c !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-approval:hover {
+    background-color: #fceb44 !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-approval:active {
+    transform: translateY(0);
+}
+
+.btn-appvHistory {
+    background-color: #5CF6BA !important;
+    color: #2c2c2c !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-appvHistory:hover {
+    background-color: #3dd69c !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(92, 246, 186, 0.3);
+}
+
+.btn-appvHistory:active {
+    transform: translateY(0);
+}
+
+.btn-monitoring {
+    background-color: #60F6EB !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-monitoring:hover {
+    background-color: #4DE2D7 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(96, 246, 235, 0.3);
+}
+
+.btn-monitoring:active {
+    transform: translateY(0);
+}
+
+.btn-deptMonitor {
+    background-color: #19D237 !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-deptMonitor:hover {
+    background-color: #15b32f !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(25, 210, 55, 0.3);
+}
+
+.btn-deptMonitor:active {
+    transform: translateY(0);
+}
+
+.btn-printing {
+    background-color: #078078 !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-printing:hover {
+    background-color: #4DE2D7 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(96, 246, 235, 0.3);
+}
+
+.btn-printing:active {
+    transform: translateY(0);
+}
+
+.btn-exp {
+    background-color: #818181 !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 8px 25px !important;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-exp:hover {
+    background-color: #b0b0b0 !important;
+    color: rgb(0, 0, 0) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-exp:active {
+    transform: translateY(0);
+}
+
+
+.date-input {
+    cursor: pointer;
+    position: relative;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+} */
+
+
+.btn-submit {
+    background-color: #01a833;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btn-submit:hover {
+    background-color: #02ff56;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-submit:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-cancel {
+    background-color: #818181;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btn-cancel:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cancel:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back {
+    color: #555;
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-back:hover {
+    color: #000;
+    transform: translateX(-5px);
+}
+
+.btn-back:active {
+    transform: translateX(-2px);
+}
+
+.btn-back i {
+    transition: transform 0.3s ease;
+}
+
+.btn-back:hover i {
+    transform: translateX(-3px);
+}
+
+.social-list-item {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    animation: none;
+    transform: scale(1);
+}
+
+
+.social-list-item:hover {
+    transform: translateY(-3px);
+    background-color: #00a1f1 !important;
+    border-color: #00a1f1 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 10px rgba(0, 161, 241, 0.3) !important;
+}
+
+.social-list-item:active {
+    transform: translateY(0);
+    box-shadow: none !important;
+}
+
+.vertical-menu,
+.navbar-brand-box,
+.sidebar-menu-scroll {
+    background: #2D3B41 !important;
+}
+
+/* 2. State Normal: Teks Putih Pudar (70%) */
+#sidebar-menu ul li a {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    background-color: transparent !important;
+    /* Hilangkan blok background */
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar-menu ul li a i {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.metismenu .mm-collapse { 
+    display: none; 
+    background-color: #2D3B41 !important;
+}
+
+body[data-sidebar=dark][data-sidebar-size=sm] .vertical-menu #sidebar-menu ul li.mm-active .active {
+    /*color: var(--bs-sidebar-menu-item-active-color) !important;*/
+    color: white !important;
+}
+
+/* 3. State Hover & Aktif: Teks jadi Putih Terang (100%) & Tanpa Blok */
+/* Note: Saya pakai putih terang karena kalau hitam akan mati di background gelap */
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li.mm-active>a,
+#sidebar-menu ul li a.active {
+    background-color: transparent !important;
+    /* Pastikan tidak ada blok */
+    color: #ffffff !important;
+    /* Teks jadi putih solid saat aktif */
+    font-weight: 600;
+    /* Sedikit lebih tebal agar ketahuan mana yang aktif */
+}
+
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li.mm-active>a i {
+    color: #ffffff !important;
+}
+
+/* 4. Sub-menu juga sama, tulisannya aja yang berubah */
+.sub-menu li a {
+    background-color: transparent !important;
+}
+
+.sub-menu li a:hover,
+.sub-menu li.active>a {
+    color: #000000 !important;
+}
+
+/* Warna dasar tombol */
+.btn-addRow {
+    background-color: #8a8a8a !important;
+    color: white;
+    /* Opsional: supaya teks tetap terbaca */
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    /* Opsional: supaya transisinya halus */
+}
+
+/* Selector hover yang benar (hanya satu titik dua) */
+.btn-addRow:hover {
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+/* --- MINIBLE SIDEBAR COLLAPSED DARK THEME --- */
+
+/* 1. Paksa background utama sidebar & sub-menu tetap gelap */
+body.vertical-collpsed .vertical-menu,
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul {
+    background-color: #2D3B41 !important;
+}
+
+/* 2. Warna teks judul menu (yang kotak hitam kecil di foto kamu) */
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
+    background-color: #36464d !important;
+    color: #ffffff !important;
+}
+
+/* 3. Teks sub-menu (item di bawah judul) agar tidak putih di atas putih */
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul li a {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 4. State hover untuk item sub-menu melayang */
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul li a:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 5. Panah kecil (arrow) sub-menu di Minible */
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a:after {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 6. Hilangkan garis pembatas putih jika ada */
+body.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul {
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.select-y {
+    background-color: #d1e7dd !important;
+    color: #0f5132 !important;
+    font-weight: bold;
+}
+
+.select-n {
+    background-color: #f8d7da !important;
+    color: #842029 !important;
+    font-weight: bold;
+}
+
+.select-na {
+    background-color: #f8f9fa !important;
+    color: #6c757d !important;
+}
+
+/* CSS ini untuk memastikan dropdown tidak merusak layout saat terbuka */
+/* Hilangkan bentuk pill saat select berubah jadi listbox (size > 1) */
+/* Container pembungkus harus punya tinggi yang tetap agar layout tidak goyang */
+
+/* 1. Container utama tetap menjaga ruang */
+.select-custom-wrapper {
+    position: relative;
+    width: 100%;
+    height: 42px;
+}
+
+/* 2. Styling Select saat terbuka (Listnya saja yang melayang) */
+.scrollable-select[size]:not([size="1"]) {
+    position: absolute;
+    top: 50px;
+    /* JARAK: Memberi celah agar terpisah dari field atas */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 0;
+    /* Tidak perlu padding lagi karena sudah dipisah top */
+    border-radius: 0px !important;
+    /* Kotak list lebih rapi jika tidak terlalu bulat */
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid #dee2e6 !important;
+    overflow-y: auto;
+}
+
+/* 3. Field Utama (Visual Field Tetap Ada di Atas) */
+.select-custom-wrapper::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    line-height: 38px;
+    padding-left: 1.5rem;
+    color: #6c757d;
+    font-size: 0.9rem;
+    border: 2px solid #dee2e6;
+    border-radius: 50rem;
+    background-color: white;
+    pointer-events: none;
+    z-index: 1001;
+    display: none;
+    /* Ikon panah */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 12px;
+}
+
+/* Tampilkan field bulat saat dropdown aktif */
+.select-custom-wrapper:has(select[size]:not([size="1"]))::before {
+    display: block;
+}
+
+/* Hilangkan outline biru bawaan browser agar tidak menumpuk */
+.scrollable-select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.tombol-view {
+    border-radius: 8px;
+    border: 0.5px solid #E0E0E0;
+    color: #0000006c;
+    background: #f5f5f5;
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.tombol-view:hover {
+    background: #ebebeb;
+    border-color: #bdbdbd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #000;
+}
+
+.tombol-view:active {
+    background: #e0e0e0;
+    transform: translateY(1px);
+}
+
+.btn-todo {
+    background: #6778F4;
+    padding: 4px 24px;
+    min-width: 100px;
+    border-radius: 50rem;
+    border: 0.5px solid #E0E0E0;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.btn-todo:hover {
+    background: #5666d9;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(103, 120, 244, 0.3);
+    border-color: #d0d0d0;
+}
+
+/* Menargetkan container Select2 agar mengikuti gaya rounded-pill */
+.select2-container--default .select2-selection--single {
+    border-radius: 50rem !important;
+    /* Gaya rounded-pill */
+    height: calc(2.25rem + 5px) !important;
+    /* Menyesuaikan tinggi agar seimbang */
+    padding-left: 0.75rem !important;
+    border-color: #dee2e6 !important;
+    border-width: 2px !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Merapikan posisi panah select2 agar tidak berantakan di pill */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100% !important;
+    right: 10px !important;
+}
+
+/* Menyesuaikan teks di dalamnya */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: normal !important;
+    color: #6c757d !important;
+    /* text-secondary */
+}
